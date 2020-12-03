@@ -1,4 +1,6 @@
 #include <iostream>
+#include <vector>
+
 using std::cout;
 using std::endl;
 double add(double x, double y)
