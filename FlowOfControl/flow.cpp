@@ -5,16 +5,28 @@ using std::endl;
 int main()
 {
   int firstNumber, secondNumber;
-  cout << "Enter a Number:";
-  cin >> firstNumber;
-  cin >> secondNumber;
-  cout << "You entered" << firstNumber << " secondNumber" << secondNumber;
-  if (firstNumber > secondNumber)
+  bool keepGoing = true;
+  while (keepGoing)
   {
-    cout << "First Number is Greater";
-  }
-  if (secondNumber > firstNumber)
-  {
-    cout << "Second Number is Greater";
+
+    cout << "Enter a Number:" << endl;
+    cin >> firstNumber;
+    cin >> secondNumber;
+    cout << "You entered" << firstNumber << " secondNumber" << secondNumber;
+    if (firstNumber > secondNumber)
+    {
+      cout << "First Number is Greater";
+    }
+    else
+    {
+      cout << "Second Number is Greater" << endl;
+    }
+    int answer;
+    cout << "Enter 0 to exit" << endl;
+    cin >> answer;
+    if (answer == 0)
+    {
+      keepGoing = false;
+    }
   }
 }
