@@ -7,6 +7,9 @@ double add(double x, double y)
 {
   return x + y;
 }
+double multiply(double num1, double num2, double num3)
+{
+}
 int main()
 {
   int total = add(3, 4);
